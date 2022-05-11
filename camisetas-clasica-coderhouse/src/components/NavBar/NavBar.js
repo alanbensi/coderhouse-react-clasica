@@ -1,10 +1,10 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import Navbar from "react-bootstrap/Navbar"
+import Container from "react-bootstrap/Container"
+import Nav from "react-bootstrap/Nav"
+import NavDropdown from "react-bootstrap/NavDropdown"
+
 import Cartwidget from "../Cartwidget/Cartwidget"
 
-// import {Navbar} from "react-bootstrap/Navbar"
-// import {Container} from "react-bootstrap/Container"
-// import {Nav} from "react-bootstrap/Nav"
-// import {NavDropdown} from "react-bootstrap/NavDropdown"
 
 const NavBar = () => {
     return (
