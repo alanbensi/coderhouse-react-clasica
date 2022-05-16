@@ -1,22 +1,24 @@
 import { useState } from "react";
 
 
-const ItemCount = (stock, initial, onAdd) => {
+const ItemCount = ({stock, initial, onAdd}) => {
     const [cantidad, setcantidad] = useState(initial); 
 
     function aumentaProducto () {
         if (cantidad < stock) {
-            setcantidad (cantidad + 1);
+            setcantidad(cantidad + 1);
         } 
     }
     function decreceProducto () {
         if (cantidad > 1) {
-            setcantidad (cantidad - 1);
+            setcantidad(cantidad - 1);
         }
     }
     function agregarAlCarrito() {
         onAdd(cantidad);
     }
+
+
 
     return (
         <div>

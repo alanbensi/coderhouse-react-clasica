@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "modelo": "Camiseta river", 
+        "imagen" : "./assets/camiseta-river.jpg"
+    },
+    {
+        "id": 2,
+        "modelo": "Camiseta boca", 
+        "imagen" : "./assets/camiseta-boca.jpg"
+    }
+]

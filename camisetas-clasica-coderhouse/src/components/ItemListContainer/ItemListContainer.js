@@ -1,8 +1,9 @@
+import ItemList from "../ItemList.js/ItemList"
 
 const ItemListContainer = ({greeting ="Hola"}) => {
     return (
         <div>
-            {greeting}
+            <ItemList></ItemList>
         </div>
     )
 }
