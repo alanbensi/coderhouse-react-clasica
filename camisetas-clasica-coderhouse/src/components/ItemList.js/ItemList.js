@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import camisetas from "../../camisetas.json";
-import ItemCount from "../ItemCount/ItemCount";
-
+import Item from "../Item/Item";
 
 
 const getCamisetas = new Promise((resolve)=>{
@@ -31,22 +30,7 @@ const ItemList = () => {
             :
             (
                 productos.map (item => 
-                <div 
-                    key={item.id}
-                    className='col-md-10 w-25 '
-                >                        
-                    <div className="card w-100 mt-5" >
-                        <div className="card-header">
-                            {item.modelo}
-                        </div>
-                        <div className="card-body">
-                            <img src={item.imagen} alt= {item.modelo} className='w-50' />                                                          
-                        </div>
-                        <div className="card-footer">  
-                            <ItemCount initial={1} stock={5} onAdd={(cantidad)=>console.log(`${cantidad} unidad/es agregada/s al pedido`)}/>
-                        </div>
-                    </div>
-                </div>
+                <Item id= {item.id} modelo= {item.modelo} imagen = {item.imagen} />
                 )
             )
         }

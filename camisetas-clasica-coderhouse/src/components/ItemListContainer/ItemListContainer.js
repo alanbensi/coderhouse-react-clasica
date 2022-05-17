@@ -1,6 +1,6 @@
 import ItemList from "../ItemList.js/ItemList"
 
-const ItemListContainer = ({greeting ="Hola"}) => {
+const ItemListContainer = () => {
     return (
         <div>
             <ItemList></ItemList>
